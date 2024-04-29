@@ -1,11 +1,15 @@
-.my_green {
+section.start_bootstrap,
+section.about_us {
     background-color: #1abc9c;
 }
 
-.col-12,
-.col-md-6,
-.col-lg-4 {
-    background-color: rgb(148, 197, 240);
+
+.about_agency {
+    background-color: #3a546d;
+}
+
+.copyright {
+    background-color: #2c3e50;
 }
 
 main img {
