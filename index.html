@@ -17,206 +17,285 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <main>
-        <section class="start_bootstrap">
-            <div class="container-fluid my_green ">
-                <div class="row flex-column justify-content-center align-items-center">
-                    <div class="col-6 col-md-4 col-lg-4 d-flex flex-wrap justify-content-center align-items-center flex-column">
-                        <img src="./img/avatar.svg" alt="Avatar profilo" class="img-fluid">
-                        <h1 class="text-uppercase text-center">
-                            start bootstrap
-                        </h1>
-                    </div>
-
-                    <div class="col-8 col-md-6 col-lg-4 d-flex flex-wrap justify-content-center align-items-center flex-column">
-                        <h2 class="text-uppercase">
-                            portfolio
-                        </h2>
-                    </div>
-    
-                    <div class="col-10 col-md-6 col-lg-4 d-flex flex-wrap justify-content-center align-items-center">
-                        <div class="half-black-line"></div>
-        
-                        <i class="fa-solid fa-star"></i>
-        
-                        <div class="half-black-line"></div>
-                    </div>
-
-                    <div class="col-12 col-md-6 col-lg-4 d-flex flex-wrap justify-content-center align-items-center flex-column">
+    <header>
+        <nav class="navbar navbar-dark navbar-expand-md nav_personalized">
+            <div id="container_nav" class="container">
+                <a class="navbar-brand text-uppercase" href="#">
+                    start bootstrap
+                </a>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse justify-content-md-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-4 mb-md-1 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active text-uppercase px-lg-3" aria-current="page" href="#">
+                                Portfolio
+                            </a>
+                        </li>
                         
-                        <!--Da vedere bene il font size con l'aumentare del display-->
-                        <h2 class="text-uppercase text-center fs-6 ">
+                        <li class="nav-item text-uppercase">
+                            <a class="nav-link active px-lg-3" href="#">
+                                About
+                            </a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active text-uppercase px-lg-3" href="#">
+                                Contact
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="jumbotron" class="light_green py-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 d-flex flex-column align-items-center">
+                        <div class="container_img_avatar d-flex flex-column text-center align-items-center me-auto ms-auto">
+                            <img src="./img/avatar.svg" alt="Foto personale Avatar" id="foto_avatar" class="img-fluid d-flex me-auto ms-auto mb-4 mb-lg-3">
+
+                            <h1 class="text-uppercase fs-3">
+                                start bootstrap
+                            </h1>
+                        </div>
+
+                        <div class="divisore_stella w-25 d-flex align-items-center">
+                            <div class="half-black-line mx-1"></div>
+    
+                            <i class="fa-solid fa-star"></i>
+            
+                            <div class="half-black-line mx-1"></div>
+                        </div>
+
+                        <h2 class="text-uppercase font_14 mt-2">
                             graphic artist - web designer - illustrator
                         </h2>
                     </div>
                 </div>
+            </div>
+        </section>
 
-                <div class="row my_green d-flex justify-content-center align-items-center">
-                    <div class="col-12 col-md-7 col-lg-4"></div>
+        <section id="portfolio">
+            <div id="container_portfolio" class="container">
+                <div class="my_container_portfolio me-auto ms-auto">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="container_title_portfolio d-flex flex-column text-center align-items-center me-auto ms-auto py-3">
+                                <h1 class="text-uppercase fs-3">
+                                    portfolio
+                                </h1>
+                                <div class="divisore_stella w-25 d-flex align-items-center">
+                                    <div class="half-black-line mx-1"></div>
+            
+                                    <i class="fa-solid fa-star"></i>
+                    
+                                    <div class="half-black-line mx-1"></div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <img src="./img/cabin.png" alt="Cabin image" class="img-fluid mb-4 mb-lg-3">
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 ">
+                            <img src="./img/cake.png" alt="Cake image" class="img-fluid mb-4 mb-lg-3">
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 ">
+                            <img src="./img/circus.png" alt="Circus image" class="img-fluid mb-4 mb-lg-3">
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 ">
+                            <img src="./img/game.png" alt="Game image" class="img-fluid mb-4 mb-lg-3">
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 ">
+                            <img src="./img/safe.png" alt="Safe image" class="img-fluid mb-4 mb-lg-3">
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <img src="./img/submarine.png" alt="Submarine image" class="img-fluid mb-4 mb-lg-3">
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section class=" my_portfolio">
-            <div class="container-fluid container-md">
+        <section id="about_us" class="light_green py-4">
+            <div id="container_aboutus" class="container">
                 <div class="row">
-                    <div class="col-4 col-6 col-12 d-flex flex-wrap justify-content-center align-items-center flex-column">
-                        <div class="_column">
-                            <h2 class="text-uppercase">
-                                portfolio
-                            </h2>
-                        </div>
+                    <div class="col-12">
+                        <div class="container_title_portfolio d-flex flex-column text-center align-items-center me-auto ms-auto py-3">
+                            <h1 class="text-uppercase fs-3">
+                                about  
+                            </h1>
+
+                            <div class="divisore_stella w-25 d-flex align-items-center">
+                                <div class="half-black-line mx-1"></div>
         
-                        <div class="_column d-flex align-items-center">
-                            <div class="half-black-line"></div>
-            
-                            <i class="fa-solid fa-star"></i>
-            
-                            <div class="half-black-line"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row d-flex justify-content-center align-items-center">
-                    <div class="col-12 col-lg-8">
-                        <div class="container-fluid d-flex flex-wrap">
-                            <div class="row">
-                                <div class="col-12 col-md-6 col-lg-4">
-                                    <img src="./img/cabin.png" alt="Cabin Image" class="img-fluid mb-3 me-3">
-                                </div>
-
-                                <div class="col-12 col-md-6 col-lg-4">
-                                    <img src="./img/cabin.png" alt="Cabin Image" class="img-fluid mb-3 me-3">
-                                </div>
-
-                                <div class="col-12 col-md-6 col-lg-4">
-                                    <img src="./img/cabin.png" alt="Cabin Image" class="img-fluid mb-3 me-3">
-                                </div>
-                                
-                                <div class="col-12 col-md-6 col-lg-4">
-                                    <img src="./img/cabin.png" alt="Cabin Image" class="img-fluid mb-3 me-3">
-                                </div>
-
-                                <div class="col-12 col-md-6 col-lg-4">
-                                    <img src="./img/cabin.png" alt="Cabin Image" class="img-fluid mb-3 me-3">
-                                </div>
-
-                                <div class="col-12 col-md-6 col-lg-4">
-                                    <img src="./img/cabin.png" alt="Cabin Image" class="img-fluid mb-3 me-3">
-                                </div>
+                                <i class="fa-solid fa-star"></i>
+                
+                                <div class="half-black-line mx-1"></div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </section>
 
-        <section class="about_us d-flex justify-content-center align-items-center">
-            <div class="col-7">
-                <div class="container">
-                    <div class="row d-flex justify-content-center align-items-center">
-                        <div class="col-12 col-md-6">
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quibusdam iusto ex nihil temporibus, cum maiores, tempore ducimus laborum repellendus eaque delectus asperiores, totam veritatis aliquam dignissimos necessitatibus distinctio officia.
-                            </p>
-                        </div>
+                    <div class="col-12 col-md-6">
+                        <p>
+                            Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScept as well as optional LESS stylesheets for easy customization.
+                        </p>
+                    </div>
 
-                        <div class="col-12 col-md-6">
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quibusdam iusto ex nihil temporibus, cum maiores, tempore ducimus laborum repellendus eaque delectus asperiores, totam veritatis aliquam dignissimos necessitatibus distinctio officia.
-                            </p>
-                        </div>
+                    <div class="col-12 col-md-6">
+                        <p>
+                            Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!
+                        </p>
+                    </div>
+
+                    <div class="col-12">
+                        <button type="button" class="btn btn-outline-light d-flex me-auto ms-auto">
+                            <i class="fa-solid fa-download me-2 mt-1"></i>
+                            Download
+                        </button>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="form d-flex justify-content-center align-items-center">
-            <div class="col-6">
-                <div class="container">
-                    <div class="row d-flex justify-content-center align-items-center">
-                        <div class="col-10 col-md-6 col-lg-4 d-flex justify-content-center align-items-center">
-                            <div class="half-black-line"></div>
-            
-                            <i class="fa-solid fa-star"></i>
-            
-                            <div class="half-black-line"></div>
+        <section id="form" class="py-4">
+            <div id="container_form" class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="container_title_portfolio d-flex flex-column text-center align-items-center me-auto ms-auto py-3">
+                            <h1 class="text-uppercase fs-3">
+                                contact me   
+                            </h1>
+
+                            <div class="divisore_stella w-25 d-flex align-items-center">
+                                <div class="half-black-line mx-1"></div>
+        
+                                <i class="fa-solid fa-star"></i>
+                
+                                <div class="half-black-line mx-1"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form action="">
+                        <div class="col-12">
+                            <label for="name">
+                                Name
+                            </label>
+                        </div>
+
+                        <div class="col-12 border-bottom lh-1">
+                            <input type="text">
                         </div>
 
                         <div class="col-12">
-                            <p>
-                                Form
-                            </p>
-
-                            <p>
-                                Form
-                            </p>
-
-                            <p>
-                                Form
-                            </p>
-
-                            <p>
-                                Form
-                            </p>
-
-                            <button>
-                                Send
-                            </button>
+                            <label for="email">
+                                Email Address
+                            </label>
                         </div>
-                    </div>
+
+                        <div class="col-12 border-bottom lh-1">
+                            <input type="email">
+                        </div>
+
+                        <div class="col-12">
+                            <label for="Number">
+                                Phone Number
+                            </label>
+                        </div>
+
+                        <div class="col-12 border-bottom lh-1">
+                            <input type="tel">
+                        </div>
+
+                        <div class="col-12">
+                            <label for="message">
+                                Message
+                            </label>
+                        </div>
+
+                        <div class="col-12 border-bottom lh-1 mb-3">
+                            <textarea id="message" name="message" rows="3" class="w-100"></textarea>
+                        </div>
+
+                        <input type="submit" value="Send" class="btn light_green">
+                    </form>
                 </div>
             </div>
         </section>
     </main>
 
     <footer>
-        <section class="about_agency">
-            <div class="container">
-                <div class="row d-flex justify-content-center align-items-center">
-                    <div class="col-12 col-lg-8">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-12 col-md-4">
-                                    <h2>
-                                        Location
-                                    </h2>
-                
-                                    <h3>
-                                        2125 street hdrl, glug
-                                    </h3>
-                                </div>
-                
-                                <div class="col-12 col-md-4">
-                                    <h2>
-                                        Location
-                                    </h2>
-                                    
-                                    <h3>
-                                        2125 street hdrl, glug
-                                    </h3>
-                                </div>
-                
-                                <div class="col-12 col-md-4">
-                                    <h2>
-                                        Location
-                                    </h2>
-                                    
-                                    <h3>
-                                        2125 street hdrl, glug
-                                    </h3>
-                                </div>
-                            </div>
-                        </div>
+        <section class="info_footer py-4">
+            <div id="container_info_footer" class="container">
+                <div class="row">
+                    <div class="col-12 col-md-4 text-center">
+                        <h2 class="text-uppercase fs-5">
+                            Location
+                        </h2>
+
+                        <p class="fs-6">
+                            2215 John Daniel Drive Clark, MO 54243
+                        </p>
+                    </div>
+                    <div class="col-12 col-md-4 d-flex flex-column align-items-center text-center">
+                        <h2 class="text-uppercase fs-5">
+                            Around The Web
+                        </h2>
+
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <i class="fa-brands fa-facebook-f rounded-circle"></i>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    <i class="fa-brands fa-google-plus-g"></i>
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="#">
+                                    <i class="fa-brands fa-twitter"></i>
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="#">
+                                    <i class="fa-brands fa-linkedin-in"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-md-4 text-center">
+                        <h2 class="text-uppercase fs-5">
+                            About Freelancer
+                        </h2>
+
+                        <p class="fs-6">
+                            Freelance is a a Free to use, open source Bootstrap theme created by <a href="#" class="text-success">Start Bootstrap</a>.
+                        </p>
                     </div>
                 </div>
             </div>
         </section>
-        
 
-        <section class="copyright">
-            copyryght 2020 fjkfuhf
+        <section class="copy_footer d-flex justify-content-center align-items-center py-4">
+            <h3 class="fs-6">Copyright @ Your Website 2024</h3>
         </section>
     </footer>
+    <!--JavaScript-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 </body>
 </html>

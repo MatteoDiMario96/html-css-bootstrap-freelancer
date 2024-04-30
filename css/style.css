@@ -1,24 +1,95 @@
-section.start_bootstrap,
-section.about_us {
-    background-color: #1abc9c;
+input,
+textarea {
+    border: none;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+}
+
+footer li {
+    height: 40px;
+    width: 40px;
+    border: 1px solid #f9fafa;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1.5rem;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
 }
 
 
-.about_agency {
-    background-color: #3a546d;
-}
-
-.copyright {
+.nav_personalized {
     background-color: #2c3e50;
 }
 
-main img {
-    border-radius: 10px
-    
+.light_green {
+    background-color: #1abc9c;
+    color: white;
+}
+
+.info_footer {
+    background-color: #3a546d;
+    color: #f9fafa;
+}
+
+.copy_footer{
+    background-color: #2c3e50;
+    color: #f9fafa;
 }
 
 .half-black-line {
-    width: 75px;
-    height: 1px;
-    border: 1px solid black;
+    width: 100%;
+    height: 2px;
+    background-color: black;
+}
+
+.container_img_avatar {
+    /* width: 60%; */
+}
+
+#container_aboutus {
+    width: 65%;
+}
+
+#container_form {
+    width: 58%;
+}
+
+#foto_avatar {
+    width: 172px;
+    height: 182.417px;
+}
+
+.font_14 {
+    font-size: 14px;
+}
+
+
+
+section#portfolio img {
+    border-radius: 10px;
+}
+
+@media screen and (min-width:734px) {
+    
+}
+
+@media screen and (min-width:992px) {
+    /* header nav,
+    main section {
+        padding: 1rem 4rem;
+    } */
+
+    #container_nav,
+    #container_portfolio,
+    #container_info_footer {
+        width: 75%;
+    } 
 }
